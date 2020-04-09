@@ -10,6 +10,8 @@ function placeImage(x, y) {
   img.setAttribute("src", nextImage);
   img.style.left = x + "px";
   img.style.top = y + "px";
+  img.style.transform = "translate(-50%. -50%) rotate(" + (Math.random() * 20 - 10) + "deg )";
+  img.style.animation = "rotate 3s 1";
   img.style.width = 40 + "%";
 
   document.body.appendChild(img);
